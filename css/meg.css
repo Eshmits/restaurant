@@ -1,0 +1,363 @@
+html {
+    position: relative;
+    min-height: 100%;
+    box-sizing: border-box;
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    
+    font-family: 'Comfortaa', cursive;
+    font-size: 20px;
+    height: 100%;
+    margin: 0;    
+    background-image: url("../image/back4.jpg");    
+    height: 100%;
+    background-position: center;
+    background-repeat: repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: rgb(239, 222, 173);
+}
+
+
+.logo {
+   height: 50px;
+   padding-bottom: 15px;
+}
+
+
+.navbar-collapse {
+    text-align: center;
+}
+
+/* Cookies */
+
+.cookie-banner {
+    display: none;
+    background: #333;
+    position: fixed;
+    top: 50px;
+    left: 0;
+    width: 100%;
+}
+
+.cookie-banner .container {
+    margin: 0 auto;
+    width: 70%;
+    color: #f0f0f0;
+    padding: 15px;
+}
+
+.button {
+    background: #ccc;
+    color: #333;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    display: inline-block;
+    border: 1px solid #aaa;
+    border-bottom: 2px solid #aaa;
+}
+
+a .button {
+    color: slategray;
+}
+
+/* Karuselis */
+.carousel-fade .carousel-inner .item {
+    opacity: 0;
+    transition-property: opacity;
+}
+.carousel-fade .carousel-inner .active {
+    opacity: 1;
+}
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+    left: 0;
+    opacity: 0;
+    z-index: 1;
+}
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right {
+    opacity: 1;
+}
+.carousel-fade .carousel-control {
+    z-index: 2;
+}
+
+.item:nth-child(1) {
+    background: url(http://www.kalkuvarti.lv/userfiles/gallery/e88d842d111c1a2987608b128c9d9193.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.item:nth-child(2) {
+    background: url(http://www.kalkuvarti.lv/userfiles/gallery/1c42894b77a98507d21f918032f4a11b.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.item:nth-child(3) {
+    background: url(../image/r10.gif) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.item:nth-child(4) {
+    background: url(../image/r6.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.item:nth-child(5) {
+    background: url(http://www.kalkuvarti.lv/userfiles/gallery/790ea2efe518bd5dc325efa6d1a42a3b.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.item:nth-child(6) {
+    background: url(http://www.kalkuvarti.lv/userfiles/gallery/3499c9c55d26d038f21b8894f92f0a67.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.carousel {
+    z-index: -99;
+}
+.carousel .item {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+}
+
+/* Pavāri */
+
+.boxes {    
+    display: grid;    
+    grid-gap: 0;    
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    margin-top: 50px;        
+}
+
+.box img {
+    width: auto;
+    height: 300px;
+    margin: 0 auto;
+    text-align: center;    
+}
+
+.ttt {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.box {    
+    text-align: justify;
+    padding: 15px;
+    line-height: 1.6;
+}
+
+.box h2 {
+    text-align: center;
+    text-decoration: underline;
+}
+
+footer {
+    margin-top: 3rem;    
+    text-align: center;
+    padding: 1rem;    
+}
+
+/* Ēdienkarte */
+
+.main-menu {
+    display: grid;
+    grid-template-columns: 0.5fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 20px;
+    margin-top: 50px;    
+}
+
+.menu-name {
+    font-size: 40px;
+    text-align: center;
+    font-weight: 500;
+    text-decoration: underline;   
+}
+
+.menu-item {
+    text-align: justify;
+    line-height: 1.6;
+            
+}
+
+/* Kontakti */
+.contact {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 250px 1fr 1fr;
+    grid-gap: 20px;
+    margin-top: 50px;
+    padding-left: 10px;    
+}
+
+.contact h2 {
+    text-decoration: underline;
+}
+
+.working-time {
+    grid-column: 1 / span 1;    
+    text-align: justify;    
+}
+
+.adress {
+    grid-column: 2 / span 1;    
+    text-align: justify;
+}
+
+.map {    
+    grid-column: 1 / span 2;    
+}
+
+footer {
+    grid-row: 3 / span 2;
+    grid-column: 1 / span 2;
+}
+
+
+/* Filmas */
+
+.movies {
+    display: grid;
+    margin-top: 50px;
+    grid-auto-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;   
+}
+
+.movie0 {
+    margin: 0 auto;
+    text-align: justify;
+}
+
+.movie1 {
+    margin: 0 auto;
+    text-align: justify;
+}
+
+.movie2 {
+    margin: 0 auto;
+    text-align: justify;
+}
+
+.movie3 {
+    margin: 0 auto;
+    text-align: justify;
+}
+
+.movies h3 {
+    text-decoration: underline;
+}
+
+.writer{
+    margin: 10px 10px;
+    max-width: 350px;
+    height: 140px;
+}
+.poster-frame img {
+    width: 100%;
+}
+
+/* Media */ 
+
+@media all and (transform-3d),
+(-webkit-transform-3d) {
+    .carousel-fade .carousel-inner > .item.next,
+    .carousel-fade .carousel-inner > .item.active.right {
+        opacity: 0;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+    .carousel-fade .carousel-inner > .item.prev,
+    .carousel-fade .carousel-inner > .item.active.left {
+        opacity: 0;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+    .carousel-fade .carousel-inner > .item.next.left,
+    .carousel-fade .carousel-inner > .item.prev.right,
+    .carousel-fade .carousel-inner > .item.active {
+        opacity: 1;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+@media screen and (max-width: 844px){
+    .boxes {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+
+    .movies {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .main-menu {
+        margin-top: 100px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;           
+    }
+
+    .map {
+        width: 100%;
+    }
+
+    .contact {
+        margin-top: 85px;         
+        grid-template-columns: 1fr;
+        grid-template-rows: 250px 270px 1fr;         
+    }
+
+    .working-time {
+        grid-column: 1 / span 2;
+    }
+
+    .adress {
+        grid-column: 1 / span 2;
+    }
+
+    .boxes {
+        margin-top: 100px;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .contact {
+               
+        grid-template-columns: 1fr;
+        grid-template-rows: 250px 270px 1fr;         
+    }
+
+    .working-time {
+        grid-column: 1 / span 2;
+    }
+
+    .adress {
+        grid-column: 1 / span 2;
+    }
+
+    
+}

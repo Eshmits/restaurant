@@ -1,0 +1,94 @@
+.logo {
+    height: 50px;
+    padding-bottom: 15px;
+ }
+
+ footer {
+    margin-top: 3rem;    
+    text-align: center;
+    padding: 1rem;
+    color: rgb(237, 204, 139);    
+}
+
+.navbar-collapse {
+    text-align: center;
+}
+
+/* line 1, ../sass/demo.scss */
+html, body {
+    font-family: 'Comfortaa', cursive;
+    padding: 0;
+    margin: 0;    
+    font-size: 20px;
+    background-image: url("../image/back4.jpg");    
+    background-position: center;
+    background-repeat: repeat;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  
+  /* line 8, ../sass/demo.scss */
+  * {
+    box-sizing: border-box;
+  }
+  
+  /* line 12, ../sass/demo.scss */
+  a {
+    color: #4ab19a;
+  }
+  
+  /* line 16, ../sass/demo.scss */
+  .clear {
+    clear: both;
+    float: none;
+    width: 100%;
+  }
+  
+  /* line 22, ../sass/demo.scss max-width: 1170px;*/
+  .container {
+    margin-top: 100px;
+    display: grid;    
+    width: 100%;    
+    margin: 0 auto;
+    text-align: center;    
+  }
+
+  .gallery {
+    text-align: center;
+    margin: 70px auto; 
+  }
+  
+  /* line 32, ../sass/demo.scss */
+  .container .gallery a img {
+    float: none;
+    width: 300px;
+    height: 250px;
+    border: 2px solid #fff;
+    -webkit-transition: -webkit-transform .15s ease;
+    -moz-transition: -moz-transform .15s ease;
+    -o-transition: -o-transform .15s ease;
+    -ms-transition: -ms-transform .15s ease;
+    transition: transform .15s ease;
+    position: relative;
+  }
+  /* line 46, ../sass/demo.scss */
+  .container .gallery a:hover img {
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -o-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    transform: scale(1.05);
+    z-index: 5;
+  }
+    
+  /* line 65, ../sass/demo.scss */
+  .align-center {
+    text-align: center;
+  }
+  
+  @media screen and (max-width: 768px){
+    .container {
+        margin-top: 50px;
+                         
+    }
+  }

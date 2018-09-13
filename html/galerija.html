@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+	<title>KOKO</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link href='http://fonts.googleapis.com/css?family=Slabo+27px' rel='stylesheet' type='text/css'>
+	<link href='../lightbox/simplelightbox.min.css' rel='stylesheet' type='text/css'>
+	<link href='../css/lightbox.css' rel='stylesheet' type='text/css'>
+</head>
+<style>
+		@import url('https://fonts.googleapis.com/css?family=Comfortaa');
+	</style>
+<body>
+	<!--Navbar-->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span> 
+					</button>
+					<a class="navbar-brand" href="#"><img src="../image/logo6.png" class="logo"></a>
+				</div>
+				<div class="collapse navbar-collapse" id="myNavbar">
+					<ul class="nav navbar-nav">
+						<li><a href="./index.html">Sākums</a></li>
+						<li><a href="./pavari.html">Pavāri</a></li> 
+						<li><a href="./edienkarte.html">Ēdienkarte</a></li>
+						<li><a href="./kontakti.html">Kontakti</a></li>
+						<li class="active"><a href="./galerija.html">Galerija</a></li>
+						<li><a href="./filmas.html">Filmas</a></li> 
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+	<!--Galerija-->
+	<div class="container">		
+		<div class="gallery">
+			<a href="../images/r2.jpg"><img src="../images/thumbs/r2thumb.jpg" alt="" title="" /></a>
+			<a href="../images/r3.jpg"><img src="../images/thumbs/r3thumb.jpg" alt="" title=""/></a>
+			<a href="../images/r4.jpg"><img src="../images/thumbs/r4thumb.jpg" alt="" title=""/></a>
+			<a href="../images/r5.jpg"><img src="../images/thumbs/r5thumb.jpg" alt="" title=""/></a>
+			<div class="clear"></div>
+
+			<a href="../images/r6.jpg"><img src="../images/thumbs/r6thumb.jpg" alt="" title=""/></a>
+			<a href="../images/r7.jpg"><img src="../images/thumbs/r7thumb.jpg" alt="" title=""/></a>
+			<a href="../images/r8.jpg"><img src="../images/thumbs/r8thumb.jpg" alt="" title=""/></a>
+			<a href="../images/r9.jpg"><img src="../images/thumbs/r9thumb.jpg" alt="" title=""/></a>
+			<div class="clear"></div>
+
+			<a href="../images/r10.jpg"><img src="../images/thumbs/r10thumb.jpg" alt="" title=""/></a>
+			<a href="../images/r11.gif"><img src="../images/thumbs/r11thumb.jpg" alt="" title=""/></a>
+			<a href="../images/r12.jpeg"><img src="../images/thumbs/r12thumb.jpg" alt="" title=""/></a>
+			<a href="../images/r14.jpeg"><img src="../images/thumbs/r14thumb.jpg" alt="" title=""/></a>
+			<div class="clear"></div>
+		</div>		
+	</div>
+
+	 <!--Footer Section-->
+	 <footer>
+			<p>&copy; 2018</p>
+	   </footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script type="text/javascript" src="../lightbox/simple-lightbox.js"></script>
+<script>
+	$(function(){
+		var $gallery = $('.gallery a').simpleLightbox();
+
+		$gallery.on('show.simplelightbox', function(){
+			console.log('Requested for showing');
+		})
+		.on('shown.simplelightbox', function(){
+			console.log('Shown');
+		})
+		.on('close.simplelightbox', function(){
+			console.log('Requested for closing');
+		})
+		.on('closed.simplelightbox', function(){
+			console.log('Closed');
+		})
+		.on('change.simplelightbox', function(){
+			console.log('Requested for change');
+		})
+		.on('next.simplelightbox', function(){
+			console.log('Requested for next');
+		})
+		.on('prev.simplelightbox', function(){
+			console.log('Requested for prev');
+		})
+		.on('nextImageLoaded.simplelightbox', function(){
+			console.log('Next image loaded');
+		})
+		.on('prevImageLoaded.simplelightbox', function(){
+			console.log('Prev image loaded');
+		})
+		.on('changed.simplelightbox', function(){
+			console.log('Image changed');
+		})
+		.on('nextDone.simplelightbox', function(){
+			console.log('Image changed to next');
+		})
+		.on('prevDone.simplelightbox', function(){
+			console.log('Image changed to prev');
+		})
+		.on('error.simplelightbox', function(e){
+			console.log('No image found, go to the next/prev');
+			console.log(e);
+		});
+	});
+</script>
+</body>
+</html>
